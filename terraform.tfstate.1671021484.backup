@@ -1,0 +1,48 @@
+{
+  "version": 4,
+  "terraform_version": "1.3.5",
+  "serial": 3,
+  "lineage": "52fe0526-6dff-f076-31c6-8c73cd566e21",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "hello",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "1025947718493696577",
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.name"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "name",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "curiously-mainly-guided-firefly",
+            "keepers": null,
+            "length": 4,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
